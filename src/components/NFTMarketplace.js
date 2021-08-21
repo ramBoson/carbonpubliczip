@@ -12,6 +12,10 @@ import FavoriteTeam from './snippets/FavoriteTeam';
 
 
 function Landing() {
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <Layout>
             <Banner />

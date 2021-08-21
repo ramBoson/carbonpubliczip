@@ -6,15 +6,15 @@ import {
 } from "react-router-dom";
 
 import Home from './components/HomePage';
-import Landing from './components/Landing';
+import NFTMarketplace from './components/NFTMarketplace';
 
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
         <Switch>
-          <Route path="/landing">
-            <Landing />
+          <Route path="/nft-marketplace">
+            <NFTMarketplace />
           </Route>
           <Route path="/">
             <Home />

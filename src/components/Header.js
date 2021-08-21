@@ -1,5 +1,9 @@
 import React from 'react';
 import {Container, Navbar, Nav} from 'react-bootstrap';
+import {
+    NavLink,
+    Link
+  } from "react-router-dom";
 
 import Logo from '../assets/images/logo.png';
 
@@ -11,13 +15,13 @@ function Header() {
                 <Navbar.Brand href="/"><img src={Logo} alt="logo" /></Navbar.Brand>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link className="active" href="/">Home</Nav.Link>
-                        <Nav.Link href="/">Nft Marketplace</Nav.Link>
-                        <Nav.Link href="/">DEFI</Nav.Link>
-                        <Nav.Link href="/">CRICKET 360</Nav.Link>
-                        <Nav.Link href="/">CoMMUNITY</Nav.Link>
-                        <Nav.Link href="/">FAQ</Nav.Link>
-                        <Nav.Link href="/">SUPPORT</Nav.Link>
+                        <NavLink className="nav-link" exact  activeclassname="active" to="/">Home</NavLink>
+                        <NavLink className="nav-link" exact  activeclassname="active" to="/nft-marketplace">Nft Marketplace</NavLink>
+                        <Link className="nav-link" to="/">DEFI</Link>
+                        <Link className="nav-link" to="/">CRICKET 360</Link>
+                        <Link className="nav-link" to="/">CoMMUNITY</Link>
+                        <Link className="nav-link" to="/">FAQ</Link>
+                        <Link className="nav-link" to="/">SUPPORT</Link>
                     </Nav>
                     <Nav>
                         <Nav.Link className="btn btn-transparent" href="./">SIGN IN</Nav.Link>

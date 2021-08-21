@@ -1,5 +1,8 @@
 import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
+import {
+    Link
+  } from "react-router-dom";
 
 import Logo from '../assets/images/footerLogo.png';
 
@@ -23,25 +26,25 @@ function Footer() {
                     </Col>
                     <Col lg={2} xs={6} className="mb-lg-0 mb-4 pb-1">
                         <ul className="list-unstyled text-uppercase">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/">NFT Marketplace</a></li>
-                            <li><a href="/">defi</a></li>
-                            <li><a href="/">cricket 360</a></li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/nft-marketplace">NFT Marketplace</Link></li>
+                            <li><Link to="/">defi</Link></li>
+                            <li><Link to="/">cricket 360</Link></li>
                         </ul>
                     </Col>
                     <Col lg={2} xs={6} className="mb-lg-0 mb-4 pb-1">
                         <ul className="list-unstyled">
-                            <li><a href="/">Community</a></li>
-                            <li><a href="/">FAQ</a></li>
-                            <li><a href="/">Support</a></li>
-                            <li><a href="/">Sign In</a></li>
+                            <li><Link href="/">Community</Link></li>
+                            <li><Link href="/">FAQ</Link></li>
+                            <li><Link href="/">Support</Link></li>
+                            <li><Link href="/">Sign In</Link></li>
                         </ul>
                     </Col>
                     <Col lg={2} className="mb-lg-0 mb-4 pb-1">
                         <ul className="list-unstyled">
-                            <li><a href="/">Terms & Conditions</a></li>
-                            <li><a href="/">Policy</a></li>
-                            <li><a href="/">Terms Conditions</a></li>
+                            <li><Link href="/">Terms & Conditions</Link></li>
+                            <li><Link href="/">Policy</Link></li>
+                            <li><Link href="/">Terms Conditions</Link></li>
                         </ul>
                     </Col>
                     <Col lg={2}>
