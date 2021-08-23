@@ -524,19 +524,30 @@ h6{
 }
 .team-area{
     text-align: center;
-    padding: 120px 0 50px;
+    padding: 60px 0 50px;
 }
 .team-member{
     margin-bottom: 10px;
 }
-.team-member > img{
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
+.team-pic{
+    margin: auto;
+    width: 190px;
+    height: 190px;
+    display: block;
+    position: relative;
     margin-bottom: 20px;
-    border-radius: 180px;
-    object-position: center;
-    border: 10px solid #F30C46;
+    background: #000000 url('./images/team-circle.png') no-repeat center center / contain;
+}
+.team-pic > img{
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 10px;
+    margin: auto;
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    border-radius: 150px;
 }
 .team-member h3{
     font-size: 21px;

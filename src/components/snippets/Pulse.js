@@ -37,7 +37,7 @@ function Pulse() {
                     </Col>
                 </Row>
 
-                <Row className="mb-80 justify-content-between align-items-center">
+                <Row className="justify-content-between align-items-center">
                     <Col lg={5} sm={12} className="mb-lg-0 mb-4 order-lg-2 text-center">
                         <img src={Batsman} alt="pulse graph" className="img-fluid mx-auto" />
                     </Col>
@@ -52,7 +52,7 @@ function Pulse() {
                     </Col>
                 </Row>
 
-                <Row className="align-items-center pt-xl-5 justify-content-between">
+                <Row className="align-items-center d-none pt-xl-5 justify-content-between">
                     <Col xs={12} className="d-block mt-md-5 d-xl-none">
                         <div className="text-center mb-4 text-uppercase d-flex justify-content-center">
                             <div className=" border-title">

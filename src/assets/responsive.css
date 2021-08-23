@@ -379,11 +379,15 @@
     .team-area{
         padding: 40px 0;
     }
-    .team-member > img{
-        width: 140px;
-        height: 140px;
-        border-width: 8px;
+    .team-pic{
+        width: 130px;
+        height: 130px;
         margin-bottom: 16px;
+    }
+    .team-pic > img{
+        width: 115px;
+        height: 115px;
+        bottom: 7px;
     }
     .team-member{
         margin-bottom: 0;
